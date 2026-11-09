@@ -1,12 +1,13 @@
 name: lint
 
-on:
-  push:
-    branches:
-      - main
-      - dev*
-  pull_request:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#       - dev*
+#   pull_request:
+# 
 jobs:
   rubocop:
     runs-on: ubuntu-latest
